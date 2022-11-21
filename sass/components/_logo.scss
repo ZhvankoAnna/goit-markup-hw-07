@@ -1,0 +1,18 @@
+.logo__text {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+
+  @include font(26px, 1.19);
+}
+
+.logo__text--accent {
+  color: var(--accent-color);
+}
+
+.logo__text--dark {
+  color: var(--logo-header);
+}
+
+.logo__text--light {
+  color: var(--light-txt-bg-color);
+}

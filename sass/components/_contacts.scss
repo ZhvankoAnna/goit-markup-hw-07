@@ -1,0 +1,33 @@
+.contacts__list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link {
+  @extend %link;
+
+  display: flex;
+  gap: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+
+  color: var(--header-contacts-color);
+
+  transition: color var(--transition-options), fill var(--transition-options);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__icon {
+  fill: currentColor;
+
+  transition: fill var(--transition-options);
+}

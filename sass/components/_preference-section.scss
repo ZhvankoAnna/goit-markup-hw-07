@@ -1,0 +1,28 @@
+.preference {
+  @include section;
+}
+
+.preference__list {
+  display: flex;
+  gap: 30px;
+}
+
+.preferences__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-bg-color);
+}
+
+.preference__subtitle {
+  @extend %subtitle;
+
+  @include font(14px, 1.14);
+
+  text-transform: uppercase;
+}

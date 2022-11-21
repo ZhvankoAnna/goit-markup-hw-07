@@ -1,0 +1,32 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--bg-color-footer);
+}
+
+.footer__container {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer__subtitle {
+  margin-bottom: 20px;
+
+  color: var(--light-txt-bg-color);
+
+  @include font(14px, 1.17);
+
+  text-transform: uppercase;
+}
+
+.footer__socials-link {
+  color: var(--light-txt-bg-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
